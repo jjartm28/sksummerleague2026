@@ -1,32 +1,62 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-<link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Panel</title>
 </head>
 <body>
-<h2>Admin Panel</h2>
 
+<div class="center">
+    <h1 class="title-main">ADMIN PANEL</h1>
+    <h2 class="title-sub">Festival of Fire Control</h2>
+
+```
+<!-- ADD TEAM -->
 <h3>Add Team</h3>
 <input id="team" placeholder="Team Name">
 <select id="sport">
-<option>basketball</option>
-<option>volleyball</option>
-<option>softball</option>
+    <option>basketball</option>
+    <option>volleyball</option>
+    <option>softball</option>
 </select>
-<button onclick="addTeam()">Add</button>
+<button onclick="addTeam()">Add Team</button>
 
+<!-- DELETE TEAM -->
+<h3>Delete Team</h3>
+<input id="teamDelete" placeholder="Team Name">
+<select id="sportDelete">
+    <option>basketball</option>
+    <option>volleyball</option>
+    <option>softball</option>
+</select>
+<button onclick="deleteTeam()">Delete Team</button>
+
+<!-- UPDATE SCORE -->
 <h3>Update Score</h3>
 <input id="teamScore" placeholder="Team Name">
 <input id="wins" type="number" placeholder="Wins">
 <input id="losses" type="number" placeholder="Losses">
-<button onclick="updateScore()">Update</button>
+<button onclick="updateScore()">Update Score</button>
 
-<h3>Add Schedule</h3>
+<!-- ADD SCHEDULE -->
+<h3>Add Match Schedule</h3>
 <input id="a" placeholder="Team A">
 <input id="b" placeholder="Team B">
 <input id="dt" type="datetime-local">
-<button onclick="addSchedule()">Add</button>
+<button onclick="addSchedule()">Add Schedule</button>
+
+<!-- UPDATE SCHEDULE -->
+<h3>Update Schedule</h3>
+<input id="schedIndex" type="number" placeholder="Schedule Index">
+<input id="newDT" type="datetime-local">
+<button onclick="updateSchedule()">Update Schedule</button>
+```
+
+</div>
 
 <script src="js/app.js"></script>
+
 </body>
 </html>
